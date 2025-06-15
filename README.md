@@ -1,4 +1,4 @@
-# 💊 Project One: MedMinder
+# 💊 Project 1: MedMinder
 
 A Django fullstack app to help you **track meds like a boss**.
 
