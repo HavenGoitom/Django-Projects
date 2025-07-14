@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Check Weather</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="city" placeholder="Enter city name: ">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>{{ temp }}&#176; C</h2>
+    <h3>{{ city }}</h3>
+    <h2>{{ description }}</h2>
+
+    <p>
+        <img src="http://openweathermap.org/img/wn/{{ icon }}.png" width="100px" alt="The weather of {{ city }}">
+    </p>
+    
+    <p>{{ day }}</p>
+</body>
+</html>
